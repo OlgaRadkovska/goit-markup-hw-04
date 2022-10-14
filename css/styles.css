@@ -396,7 +396,7 @@ img {
 }
 
 .portfolio-list-item {
-  flex-basis: calc((100%- (2 * 30px))) / 370;
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .portfolio-list-item:nth-child(3n) {
