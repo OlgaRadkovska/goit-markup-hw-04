@@ -175,26 +175,27 @@ img {
 
 /* ==================HERO================= */
 .hero-section {
-  padding: 0;
+  padding: 200px 0;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/hero/bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-}
-
-.hero-content {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
+  text-align: center;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-page-title {
   max-width: 696px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -395,7 +396,7 @@ img {
 }
 
 .portfolio-list-item {
-  flex-basis: calc((100%-2 * 30px)) / 370;
+  flex-basis: calc((100%- (2 * 30px))) / 370;
 }
 
 .portfolio-list-item:nth-child(3n) {
@@ -406,18 +407,19 @@ img {
   margin-bottom: 0;
 }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
+.portfolio-item-link {
+  display: block;
+  color: inherit;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item-link {
-  color: inherit;
-}
-
 .portfolio-item-description {
-  padding: 24px 20px;
+  padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
@@ -447,6 +449,8 @@ img {
 .portfolio-button:focus {
   color: var(--bg-page-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-item-title {
@@ -473,6 +477,7 @@ img {
 
 .footer-block {
   column-gap: 70px;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -511,12 +516,9 @@ img {
   color: var(--bg-page-color);
 }
 
-.footer-social-links {
-  padding-top: 12px;
-}
 .social-lins-action {
   color: #ffffff;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 1.14;
   margin-bottom: 20px;
 }
