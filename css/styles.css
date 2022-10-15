@@ -243,11 +243,10 @@ img {
 
 .icon-wrapper {
   display: flex;
+  height: 120px;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
   background-color: var(--our-team-sec-bg);
 }
 
@@ -324,12 +323,17 @@ img {
   column-gap: 10px;
 }
 
+.social-list-item {
+  width: 44px;
+  height: 44px;
+}
+
 .social-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 44px;
-  height: 44px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: #ffffff;
 }
@@ -357,9 +361,18 @@ img {
 .client-list {
   column-gap: 30px;
 }
+
+.client-item {
+  height: 92px;
+  flex-basis: calc((100% - 5 * 30px) / 6);
+}
 .client-link {
   display: flex;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
